@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Chipz</title>
+
+    <!-- FONT POPPINS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FEATHER ICONS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-container">
+
+            <div class="logo">Banana <span>Chipz</span></div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+
+                <!-- ORDER MOBILE -->
+                <li>
+                    <a href="https://wa.me/6285184405679" target="_blank" class="order-btn-mobile">
+                        Order
+                    </a>
+                </li>
+            </ul>
+
+            <!-- ORDER DESKTOP -->
+            <a href="https://wa.me/6285184405679" target="_blank" class="order-btn-desktop">
+                Order
+            </a>
+
+            <!-- HAMBURGER -->
+            <div class="hamburger" id="hamburger">
+                <i data-feather="menu"></i>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home">
+        <div class="overlay"></div>
+        <h1>Banana Chipz</h1>
+        <p>Cemilan renyah dan premium dari pisang pilihan!</p>
+    </section>
+
+    <!-- PRODUK -->
+    <section id="produk">
+        <h2 class="title">Varian Produk Kami</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="img/1.jpg" alt="Original">
+                <h3>10K</h3>
+                <p>COKELAT</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/2.jpg" alt="Coklat">
+                <h3>10K</h3>
+                <p>MATCHA</p>
+            </div>
+
+            <div class="product-card">
+                <img src="img/3.jpg" alt="Karamel">
+                <h3>10K</h3>
+                <p>TIRAMISHU</p>
+            </div>
+
+        </div>
+    </section>
+
+   <section id="about">
+    <div class="about-container">
+
+        <!-- TEKS DI KIRI -->
+        <div class="about-text">
+            <h2 class="title">Tentang Kami</h2>
+            <p>
+                Banana Chipz adalah brand camilan premium yang menghadirkan
+                keripik pisang renyah dengan tiga varian rasa favorit. Kami 
+                menggunakan bahan berkualitas dan proses produksi higienis
+                untuk menghadirkan pengalaman ngemil yang nikmat dan modern.
+            </p>
+        </div>
+
+        <!-- GAMBAR DI KANAN -->
+        <div class="about-image">
+            <img src="img/about sec 1.png" alt="Banana Chips">
+        </div>
+
+    </div>
+</section>
+
+    <section id="contact">
+    <h2 class="title">Kontak Kami</h2>
+
+    <div class="contact-wrapper">
+
+        <!-- FORM KONTAK -->
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan berhasil dikirim!');">
+            <div class="input-group">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Masukkan email Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label>Pesan</label>
+                <textarea placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+
+            <button class="submit-btn" type="submit">Kirim Pesan</button>
+        </form>
+
+        <!-- INFORMASI & MAP -->
+        <div class="contact-info">
+
+            <div class="info-box">
+                <i data-feather="map-pin"></i>
+                <p>Matang Geuleumpang Dua</p>
+            </div>
+
+            <div class="info-box">
+                <i data-feather="phone"></i>
+                <p>+62 851-8440-5679</p>
+            </div>
+
+            <div class="info-box">
+                <i data-feather="mail"></i>
+                <p>cutenaa026@gmail.com</p>
+            </div>
+
+            <!-- GOOGLE MAPS -->
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11238.370115095746!2d96.7767811973653!3d5.205378038738087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30476864f4a10b7d%3A0x4ea3508d3e19d17f!2sMatang%20Glp%20Dua%20Meunasah%20Dayah%2C%20Peusangan%2C%20Bireuen%20Regency%2C%20Aceh!5e0!3m2!1sen!2sid!4v1763217159736!5m2!1sen!2sid"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <footer>
+    <div class="footer-container">
+
+        <!-- SOSIAL MEDIA DIPINDAH KE ATAS -->
+        <div class="footer-social">
+            <a href="#"><i data-feather="facebook"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="instagram"></i></a>
+        </div>
+
+        <p class="footer-text">
+            © 2025 MUFADDHAL. All Rights Reserved.
+        </p>
+
+    </div>
+</footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        feather.replace();
+
+        // NAVBAR SCROLL EFFECT
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
+
+        // HAMBURGER MENU
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
